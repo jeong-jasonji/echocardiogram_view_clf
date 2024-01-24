@@ -122,6 +122,8 @@ class classifyEchos(object):
         # choose the whole image to predict from
         idxs = list(range(img_array.shape[0]))
         # run classification eval on the model
+
+        ### This is where nifti output should be ###
         preds = []
         pred_score_dict = {}
         for idx in tqdm(idxs, desc='{} Clf Progress'.format(f), leave=False):            
